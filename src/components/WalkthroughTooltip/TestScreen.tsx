@@ -4,7 +4,10 @@ import React, { useEffect } from 'react'
 import { copilot, walkthroughable, CopilotStep, } from '@okgrow/react-native-copilot';
 import TooltipComponent from './tooltipComponent';
 
-
+const StepNumberComponent = ({ isFirstStep, isLastStep, currentStep, currentStepNumber }) => (
+    <View style={{}}>
+    </View>
+  );
 const TestScreen = (props: any) => {
     // console.log("-----------",props);
     
@@ -61,6 +64,7 @@ export default copilot({
     tooltipComponent: TooltipComponent,
     overlay: 'svg',
     animated: true,
+    stepNumberComponent: StepNumberComponent,
 })(TestScreen);
 
 const styles = StyleSheet.create({
@@ -85,10 +89,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 70,
         top: 70
-
     },
     Walkthrouhable:{
         height: 85,
         backgroundColor: 'red'
+    },
+    stepNumberContainer: {
+        display:'none'
     }
 })

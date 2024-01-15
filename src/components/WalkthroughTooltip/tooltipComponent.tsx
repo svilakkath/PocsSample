@@ -41,11 +41,13 @@ const TooltipComponent = ({
 export default TooltipComponent;
 const styles = StyleSheet.create({
   container: {
-    // width: '100%', 
+    width: 250,
+    // height:100, 
     borderRadius: 10, 
    
     // padding: 15,
     backgroundColor:'#8fbc8f',
+    // position:'relative'
     
   },
   header:{
