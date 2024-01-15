@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React, { useEffect } from 'react'
 
 import { copilot, walkthroughable, CopilotStep, } from '@okgrow/react-native-copilot';
-import TooltipComponent from './toolComponent';
+import TooltipComponent from './tooltipComponent';
 
 
 const TestScreen = (props: any) => {

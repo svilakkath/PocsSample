@@ -15,7 +15,7 @@ import {
   Colors,
 
 } from 'react-native/Libraries/NewAppScreen';
-import TestScreen from './src/components/Tooltip/TestScreen';
+import TestScreen from './src/components/WalkthroughTooltip/TestScreen';
 
 
 function App(): JSX.Element {
