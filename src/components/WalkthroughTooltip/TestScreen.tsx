@@ -6,7 +6,7 @@ import TooltipComponent from './tooltipComponent';
 
 
 const TestScreen = (props: any) => {
-    console.log("-----------",props);
+    // console.log("-----------",props);
     
     const WalkthrouhableView = walkthroughable(View)
     const WalkthrouhableText = walkthroughable(Text)

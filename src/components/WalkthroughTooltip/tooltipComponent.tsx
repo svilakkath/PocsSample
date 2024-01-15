@@ -9,6 +9,7 @@ const TooltipComponent = ({
   handlePrev,
   handleStop,
   currentStep,
+  order
   
 }: any) => (
   <View style={styles.container}>
@@ -23,7 +24,9 @@ const TooltipComponent = ({
     </View>
 
     <Text style={styles.headingText}>{currentStep.text[1]}</Text>
-    <View>
+
+    <View style={styles.footbar}>
+        <View style={{}}><Text>{`${currentStep.order}/2`}</Text></View>
       <TouchableOpacity onPress={isLastStep ? handleStop : handleNext} style={styles.button}>
         <Text style={{ fontSize: 15, color: '#fff' }}>{isLastStep ? 'Got it' : 'Next'}</Text>
       </TouchableOpacity>
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     borderRadius: 10, 
    
     // padding: 15,
-    backgroundColor:'red',
+    backgroundColor:'#8fbc8f',
     
   },
   header:{
@@ -58,8 +61,16 @@ const styles = StyleSheet.create({
     fontSize: 15, color: '#000', fontWeight: '400'
   },
   button:{
-    left: 170, backgroundColor: 'tomato',
-    alignItems: 'center', width: 80, padding: 5, borderRadius: 10, marginTop: 13
+    left: 0, 
+    backgroundColor: 'tomato',
+    alignItems: 'center',
+    width: 80, 
+    padding: 5, 
+    borderRadius: 10, 
+    marginTop: 13
+  },
+  footbar:{
+    flexDirection:'row',alignItems:'center',justifyContent:'flex-end'
   }
 
 })
