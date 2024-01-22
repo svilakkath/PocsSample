@@ -15,7 +15,9 @@ import {
   Colors,
 
 } from 'react-native/Libraries/NewAppScreen';
-import TestScreen from './src/components/WalkthroughTooltip/TestScreen';
+
+import VerticalCalendar from './src/components/Calender/VerticalCalendar';
+import Test1 from './src/components/Calender/Test1';
 
 
 function App(): JSX.Element {
@@ -26,7 +28,7 @@ function App(): JSX.Element {
   };
 
   return (
-  <TestScreen/>
+  <Test1/>
   );
 }
 
